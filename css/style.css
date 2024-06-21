@@ -9,3 +9,84 @@ body{
     background-size: cover;
     background-attachment: fixed; 
 }
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
+header {
+    padding: 27px 0 24px 0;
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff);
+    text-align: center;
+    height: 350px;
+}
+
+#logo img {
+    width: 150px;
+}
+
+#menu {
+    padding: 22px 0 0 0;
+    float: right;
+    /* background-color: red; */
+    width: 100%;
+}
+
+#menu li {
+    /* float: right; */
+    font: .7em Tahoma, sans-serif;
+    color: #b7b7b7;
+    padding: 0 11px 8px 11px;
+}
+
+#menu li a {
+    display: block;
+    font: bold .9rem Georgia, serif;
+    text-transform: uppercase;
+    color: #666;
+}
+
+footer {
+    height: 183px;
+    background: #333;
+    border-top: 10px solid #4c4c4c;
+}
+
+.card p {
+    font: .8em/1.5 Helvetica;
+    color: #8b8888;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+    header{
+        height: 138px;
+    }
+
+    header nav {
+        text-align: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        padding-top: 0;
+        width: initial;
+        /* float: right; */
+    }
+
+    #menu li {
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+    }
+}
